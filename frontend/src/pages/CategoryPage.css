@@ -144,9 +144,15 @@
   text-align: center;
 }
 
-.kids-icon {
-  font-size: 80px;
+.kids-icon-svg {
   margin-bottom: 24px;
+  color: var(--accent-gold);
+  display: flex;
+  justify-content: center;
+}
+
+.kids-gender-card:hover .kids-icon-svg {
+  color: var(--primary-burgundy);
 }
 
 .kids-gender-card h3 {
