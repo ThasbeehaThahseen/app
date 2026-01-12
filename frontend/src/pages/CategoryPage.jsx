@@ -47,7 +47,9 @@ export const CategoryPage = () => {
           <div className="kids-gender-grid">
             <Card className="kids-gender-card" onClick={() => navigate('/category/kids/boy')}>
               <CardContent className="kids-gender-content">
-                <div className="kids-icon">👦</div>
+                <div className="kids-icon-svg">
+                  <User size={80} strokeWidth={1.5} />
+                </div>
                 <h3>Boy</h3>
                 <p>Traditional, Casual, Party & Night Wears</p>
                 <Button variant="ghost" className="select-btn">
@@ -58,7 +60,9 @@ export const CategoryPage = () => {
 
             <Card className="kids-gender-card" onClick={() => navigate('/category/kids/girl')}>
               <CardContent className="kids-gender-content">
-                <div className="kids-icon">👧</div>
+                <div className="kids-icon-svg">
+                  <Users size={80} strokeWidth={1.5} />
+                </div>
                 <h3>Girl</h3>
                 <p>Traditional, Casual, Party & Night Wears</p>
                 <Button variant="ghost" className="select-btn">
