@@ -1,10 +1,18 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ChevronRight, BookOpen, Home, Sparkles, Moon } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { categories } from '../data/mockData';
 import './KidsCategoryPage.css';
+
+// Icon mapping
+const iconMap = {
+  BookOpen,
+  Home,
+  Sparkles,
+  Moon
+};
 
 export const KidsCategoryPage = () => {
   const { kidsGender } = useParams();
