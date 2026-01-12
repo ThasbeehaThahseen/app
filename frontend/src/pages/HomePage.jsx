@@ -31,7 +31,9 @@ export const HomePage = () => {
         <div className="gender-grid">
           <Card className="gender-card" onClick={() => navigate('/category/men')}>
             <CardContent className="gender-card-content">
-              <div className="gender-icon">👔</div>
+              <div className="gender-icon-svg">
+                <Shirt size={64} strokeWidth={1.5} />
+              </div>
               <h3>Men's Collection</h3>
               <p>Traditional & Contemporary Wear</p>
               <Button variant="ghost" className="explore-btn">
@@ -42,7 +44,9 @@ export const HomePage = () => {
 
           <Card className="gender-card" onClick={() => navigate('/category/women')}>
             <CardContent className="gender-card-content">
-              <div className="gender-icon">👗</div>
+              <div className="gender-icon-svg">
+                <Layers size={64} strokeWidth={1.5} />
+              </div>
               <h3>Women's Collection</h3>
               <p>Sarees, Ethnic & Western Wear</p>
               <Button variant="ghost" className="explore-btn">
@@ -53,7 +57,9 @@ export const HomePage = () => {
 
           <Card className="gender-card" onClick={() => navigate('/category/kids')}>
             <CardContent className="gender-card-content">
-              <div className="gender-icon">🎈</div>
+              <div className="gender-icon-svg">
+                <Baby size={64} strokeWidth={1.5} />
+              </div>
               <h3>Kids Collection</h3>
               <p>Traditional, Casual & Party Wear</p>
               <Button variant="ghost" className="explore-btn">
