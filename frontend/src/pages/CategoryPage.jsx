@@ -88,24 +88,32 @@ export const CategoryPage = () => {
 
       <section className="categories-section">
         <div className="categories-grid">
-          {genderCategories.map(category => (
-            <Card 
-              key={category.id} 
-              className="category-card"
-              onClick={() => navigate(`/products/${gender}/${category.id}`)}
-            >
-              <CardContent className="category-card-content">
-                {category.icon && <div className="category-icon">{category.icon}</div>}
-                <h3 className="category-name">{category.name}</h3>
-                {category.description && (
-                  <p className="category-description">{category.description}</p>
-                )}
-                <Button variant="ghost" className="view-btn">
-                  View Collection <ChevronRight size={18} />
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+          {genderCategories.map(category => {
+            const IconComponent = category.icon ? iconMap[category.icon] : null;
+            
+            return (
+              <Card 
+                key={category.id} 
+                className="category-card"
+                onClick={() => navigate(`/products/${gender}/${category.id}`)}
+              >
+                <CardContent className="category-card-content">
+                  {IconComponent && (
+                    <div className="category-icon-svg">
+                      <IconComponent size={56} strokeWidth={1.5} />
+                    </div>
+                  )}
+                  <h3 className="category-name">{category.name}</h3>
+                  {category.description && (
+                    <p className="category-description">{category.description}</p>
+                  )}
+                  <Button variant="ghost" className="view-btn">
+                    View Collection <ChevronRight size={18} />
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </section>
     </div>
