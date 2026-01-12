@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronRight, Sparkles, Shirt, Layers, Baby } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import './HomePage.css';
