@@ -76,9 +76,15 @@
   text-align: center;
 }
 
-.category-icon {
-  font-size: 56px;
+.category-icon-svg {
   margin-bottom: 24px;
+  color: var(--primary-burgundy);
+  display: flex;
+  justify-content: center;
+}
+
+.category-card:hover .category-icon-svg {
+  color: var(--primary-navy);
 }
 
 .category-name {
