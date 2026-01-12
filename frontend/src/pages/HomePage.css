@@ -78,9 +78,15 @@
   text-align: center;
 }
 
-.gender-icon {
-  font-size: 64px;
+.gender-icon-svg {
   margin-bottom: 24px;
+  color: var(--primary-burgundy);
+  display: flex;
+  justify-content: center;
+}
+
+.gender-card:hover .gender-icon-svg {
+  color: var(--primary-navy);
 }
 
 .gender-card h3 {
