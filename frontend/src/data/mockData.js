@@ -133,11 +133,11 @@ export const mockProducts = [
 // Categories for each gender
 export const categories = {
   men: [
-    { id: 'traditional', name: 'Traditional Attire', icon: '🪔' },
-    { id: 'shirts', name: 'Shirts', icon: '👔' },
-    { id: 'suits', name: 'Suits', icon: '🤵' },
-    { id: 'pants', name: 'Pants', icon: '👖' },
-    { id: 'lingeries', name: 'Lingeries', icon: '👕' }
+    { id: 'traditional', name: 'Traditional Attire', icon: 'BookOpen' },
+    { id: 'shirts', name: 'Shirts', icon: 'Shirt' },
+    { id: 'suits', name: 'Suits', icon: 'Briefcase' },
+    { id: 'pants', name: 'Pants', icon: 'Wind' },
+    { id: 'lingeries', name: 'Lingeries', icon: 'Package' }
   ],
   women: [
     { id: 'traditional', name: 'Traditional Wears', description: 'Sarees and more' },
@@ -148,9 +148,9 @@ export const categories = {
     { id: 'innerwear', name: 'Inner Wears', description: 'Slips, Bras, Blouse bits' }
   ],
   kids: [
-    { id: 'traditional', name: 'Traditional', icon: '🪔' },
-    { id: 'casual', name: 'Casual', icon: '👕' },
-    { id: 'party', name: 'Party Wears', icon: '🎉' },
-    { id: 'nightwear', name: 'Night Wears', icon: '🌙' }
+    { id: 'traditional', name: 'Traditional', icon: 'BookOpen' },
+    { id: 'casual', name: 'Casual', icon: 'Home' },
+    { id: 'party', name: 'Party Wears', icon: 'Sparkles' },
+    { id: 'nightwear', name: 'Night Wears', icon: 'Moon' }
   ]
 };
