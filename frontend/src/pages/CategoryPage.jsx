@@ -1,10 +1,21 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ChevronRight, ArrowLeft } from 'lucide-react';
+import { ChevronRight, ArrowLeft, BookOpen, Shirt, Briefcase, Wind, Package, User, Users } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { categories } from '../data/mockData';
 import './CategoryPage.css';
+
+// Icon mapping
+const iconMap = {
+  BookOpen,
+  Shirt,
+  Briefcase,
+  Wind,
+  Package,
+  User,
+  Users
+};
 
 export const CategoryPage = () => {
   const { gender } = useParams();
